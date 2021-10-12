@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Form(props) {
-  const { values, update, submit } = props;
+  const { values, update, submit, errorText } = props;
 
   const onChange = (evt) => {
     const { name, value } = evt.target;
@@ -15,8 +15,9 @@ export default function Form(props) {
 
   return (
     <form className='form container' onSubmit={onSubmit}>
+      <h2 className='error'>{errorText}</h2>
       <div className='form-field'>
-        <label>Name</label>
+        <label>Name:</label>
         <input
           type='text'
           name='name'
@@ -25,7 +26,7 @@ export default function Form(props) {
           onChange={onChange}
         />
 
-        <label>Email</label>
+        <label>Email:</label>
         <input
           type='email'
           name='email'
@@ -34,16 +35,16 @@ export default function Form(props) {
           onChange={onChange}
         />
 
-        <label>Role</label>
+        <label>Role:</label>
         <select name='role' value={values.role} onChange={onChange}>
           <option value=''>-- Select a Role --</option>
-          <option value='student'>Student</option>
-          <option value='team lead'>Team Lead</option>
-          <option value='instructor'>Instructor</option>
-          <option value='alumni'>Alumni</option>
+          <option value='Student'>Student</option>
+          <option value='Team lead'>Team Lead</option>
+          <option value='Instructor'>Instructor</option>
+          <option value='Alumni'>Alumni</option>
         </select>
         <div className='submit'>
-          <button type='submit'>Submit</button>
+          <button type='submit'>Add Member</button>
         </div>
       </div>
     </form>
