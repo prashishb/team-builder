@@ -28,6 +28,7 @@ function App() {
       return;
     }
     setTeamMembers([newMember, ...teamMembers]);
+    setFormValues(initialFormValues);
   };
 
   return (
