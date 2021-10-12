@@ -8,8 +8,8 @@ export default function Members(props) {
   }
 
   return (
-    <div className='container'>
-      <h2>{details.name}</h2>
+    <div>
+      <h3>{details.name}</h3>
       <p>Email: {details.email}</p>
       <p>Role: {details.role}</p>
     </div>

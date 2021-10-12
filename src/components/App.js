@@ -44,9 +44,12 @@ function App() {
         submit={submitForm}
         errorText={errorText}
       />
-      {teamMembers.map((elem) => {
-        return <Members key={elem.id} details={elem} />;
-      })}
+      <div className='container'>
+        <h2 className='team-title'>Team</h2>
+        {teamMembers.map((elem) => {
+          return <Members key={elem.id} details={elem} />;
+        })}
+      </div>
     </div>
   );
 }
