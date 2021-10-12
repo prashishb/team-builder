@@ -15,39 +15,33 @@ export default function Form(props) {
 
   return (
     <form className='form container' onSubmit={onSubmit}>
-      <div>
-        <label>
-          Name
-          <input
-            type='text'
-            name='name'
-            value={values.name}
-            placeholder='enter a name'
-            onChange={onChange}
-          />
-        </label>
+      <div className='form-field'>
+        <label>Name</label>
+        <input
+          type='text'
+          name='name'
+          value={values.name}
+          placeholder='enter a name'
+          onChange={onChange}
+        />
 
-        <label>
-          Email
-          <input
-            type='email'
-            name='email'
-            value={values.email}
-            placeholder='enter an email'
-            onChange={onChange}
-          />
-        </label>
+        <label>Email</label>
+        <input
+          type='email'
+          name='email'
+          value={values.email}
+          placeholder='enter an email'
+          onChange={onChange}
+        />
 
-        <label>
-          Role
-          <select name='role' value={values.role} onChange={onChange}>
-            <option value=''>-- Select a Role --</option>
-            <option value='student'>Student</option>
-            <option value='team lead'>Team Lead</option>
-            <option value='instructor'>Instructor</option>
-            <option value='alumni'>Alumni</option>
-          </select>
-        </label>
+        <label>Role</label>
+        <select name='role' value={values.role} onChange={onChange}>
+          <option value=''>-- Select a Role --</option>
+          <option value='student'>Student</option>
+          <option value='team lead'>Team Lead</option>
+          <option value='instructor'>Instructor</option>
+          <option value='alumni'>Alumni</option>
+        </select>
         <div className='submit'>
           <button type='submit'>Submit</button>
         </div>

@@ -29,9 +29,10 @@ function App() {
     }
     setTeamMembers([newMember, ...teamMembers]);
   };
+
   return (
     <div className='App'>
-      <h1>Form App</h1>
+      <h1>Team Builder App</h1>
       <Form values={formValues} update={updateForm} submit={submitForm} />
       {teamMembers.map((elem) => {
         return <Members key={elem.id} details={elem} />;
