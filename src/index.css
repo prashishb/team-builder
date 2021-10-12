@@ -1,0 +1,96 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  background: rgb(51, 152, 219);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.team-title {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+h3 {
+  color: #3498db;
+}
+
+.container {
+  margin: 0 auto;
+  width: 40%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 4px;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.5);
+  padding: 32px;
+  background-color: white;
+  margin-bottom: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+input,
+select {
+  width: 100%;
+  height: 3em;
+  border: 0.1em solid #ddd;
+  border-radius: 4px;
+  outline-color: #3498db;
+  text-indent: 0.5em;
+  margin-bottom: 2%;
+}
+
+button {
+  color: #3498db;
+  background-color: transparent;
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  transition: all 146ms ease-in-out;
+}
+
+button:hover {
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+}
