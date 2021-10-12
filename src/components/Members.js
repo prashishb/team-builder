@@ -9,7 +9,12 @@ export default function Members(props) {
 
   return (
     <div>
-      <h3>{details.name}</h3>
+      <h3>
+        {details.name
+          .split(' ')
+          .map((elem) => elem[0].toUpperCase() + elem.substr(1))
+          .join(' ')}
+      </h3>
       <p>Email: {details.email}</p>
       <p>Role: {details.role}</p>
     </div>
