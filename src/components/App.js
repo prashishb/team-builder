@@ -21,7 +21,10 @@ function App() {
 
   const submitForm = () => {
     const newMember = {
-      name: formValues.name,
+      name: formValues.name
+        .split(' ')
+        .map((elem) => elem[0].toUpperCase() + elem.substr(1))
+        .join(' '),
       email: formValues.email.trim(),
       role: formValues.role,
     };
