@@ -1,7 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
-  background: rgb(51, 152, 219);
+  background: hsl(204, 70%, 53%);
 }
 
 *,
@@ -27,26 +27,26 @@ code {
 
 h1 {
   text-align: center;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .team-title {
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid hsl(0, 0%, 87%);
 }
 
 h3 {
-  color: #3498db;
+  color: hsl(204, 70%, 53%);
 }
 
 .container {
   margin: 0 auto;
   width: 40%;
-  border: 1px solid rgb(210, 210, 210);
+  border: 1px solid hsl(0, 0%, 82%);
   border-radius: 4px;
-  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 60px -30px hsla(0, 0%, 0%, 0.5);
   padding: 32px;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   margin-bottom: 24px;
 }
 
@@ -65,32 +65,32 @@ input,
 select {
   width: 100%;
   height: 3em;
-  border: 0.1em solid #ddd;
+  border: 0.1em solid hsl(0, 0%, 87%);
   border-radius: 4px;
-  outline-color: #3498db;
+  outline-color: hsl(204, 70%, 53%);
   text-indent: 0.5em;
   margin-bottom: 2%;
 }
 
 button {
-  color: #3498db;
+  color: hsl(204, 70%, 53%);
   background-color: transparent;
   width: 100%;
   height: 2.5em;
   font-size: 1.2rem;
   cursor: pointer;
-  border: 1px solid #3498db;
+  border: 1px solid hsl(204, 70%, 53%);
   border-radius: 4px;
   transition: all 146ms ease-in-out;
 }
 
 button:hover {
-  background-color: #3498db;
-  color: #fff;
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  background-color: hsl(204, 70%, 53%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 8px 6px -6px hsla(0, 0%, 0%, 0.3);
 }
 
 .error {
-  color: red;
+  color: hsl(4, 90%, 58%);
   font-size: 1rem;
 }

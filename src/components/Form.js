@@ -22,7 +22,7 @@ export default function Form(props) {
           type='text'
           name='name'
           value={values.name}
-          placeholder='enter a name'
+          placeholder='John Doe'
           onChange={onChange}
         />
 
@@ -31,7 +31,7 @@ export default function Form(props) {
           type='email'
           name='email'
           value={values.email}
-          placeholder='enter an email'
+          placeholder='john@example.com'
           onChange={onChange}
         />
 
