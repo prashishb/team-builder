@@ -42,7 +42,7 @@ h3 {
 
 .container {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   border: 1px solid hsl(0, 0%, 82%);
   border-radius: 4px;
   box-shadow: 0 30px 60px -30px hsla(0, 0%, 0%, 0.5);
@@ -93,7 +93,7 @@ button:hover {
 
 .error {
   color: hsl(4, 90%, 58%);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 770px) {
@@ -102,8 +102,5 @@ button:hover {
   }
   .container {
     width: 40%;
-  }
-  .error {
-    font-size: 1rem;
   }
 }
