@@ -26,6 +26,7 @@ code {
 }
 
 h1 {
+  font-size: 1.6rem;
   text-align: center;
   color: hsl(0, 0%, 100%);
 }
@@ -41,13 +42,13 @@ h3 {
 
 .container {
   margin: 0 auto;
-  width: 40%;
+  width: 60%;
   border: 1px solid hsl(0, 0%, 82%);
   border-radius: 4px;
   box-shadow: 0 30px 60px -30px hsla(0, 0%, 0%, 0.5);
-  padding: 32px;
+  padding: 2%;
   background-color: hsl(0, 0%, 100%);
-  margin-bottom: 24px;
+  margin-bottom: 2%;
 }
 
 .form-field {
@@ -92,5 +93,17 @@ button:hover {
 
 .error {
   color: hsl(4, 90%, 58%);
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 770px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container {
+    width: 40%;
+  }
+  .error {
+    font-size: 1rem;
+  }
 }
